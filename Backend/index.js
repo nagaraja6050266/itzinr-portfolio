@@ -2,8 +2,12 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 require("dotenv").config();
+
+//Middlewares
 app.use(express.json());
-app.use(cors());
+app.use(
+    cors()
+);
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const mongoose = require("mongoose");
