@@ -1,0 +1,375 @@
+*{
+  font-family: Poppins;
+  color: black;
+  font-weight: normal;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+.nav-bar {
+  top: 0;
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: fit-content;
+  position: fixed;
+  margin-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.nav-bar h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(52, 52, 52);
+  transition: 300ms;
+}
+.nav-bar h3:hover{
+  color: black;
+}
+.insta-icon{
+  margin-right: 10px;
+}
+.icon{
+  height: 40px;
+  animation: iconanimation 3s;
+}
+.icons{
+
+}
+
+.profileImage {
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  float: left;
+  margin-right: 20px;
+  shape-outside: circle();
+}
+.intro-text{  
+  margin-left: 20px;
+}
+.intro {
+  margin: 60px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.intro h2, .intro h3 {
+  margin: 10px 0;
+}
+
+.intro h3 {
+  font-size: 1rem;
+  color: black;
+}
+section{
+  margin: 0px 0px 8px 0px;
+  border: solid #afdbff 1px;
+  background-image: linear-gradient(315deg, #7bc3fd 0%, #c1e3ff 74%);
+  border-radius: 10px;
+  height: max-content;
+  padding: 20px 0px;
+}
+
+/*Card CSS*/
+
+.carousel-item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 70px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 1000ms all;
+  transition: 1000ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carousel-item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-item__details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 10px;
+  opacity: 0;
+  transition: 600ms;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card-text{
+  margin-top: 70%;
+}
+.carousel-item__details:hover {
+  opacity: 1;
+}
+.carousel-item__details h2{
+  font-weight: bold;
+}
+
+.carousel-item__details h2,h3{
+  color: white;
+}
+
+.skill-card{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.skill-card img{
+  height: 100px;
+  width: 100px;
+}
+.skill-card h4{
+  margin: 10px 0px;
+}
+.icon-and-caption{
+  padding: 10px 10px 0px 10px;
+}
+.skill-cards-container, .projects-container, .comments-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-header{
+  margin: 0px 0px 20px 20px;
+}
+
+
+/*Comments CSS*/
+
+.comments-card{
+  max-width: 30%;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 10px;
+  min-width: 30%;
+}
+
+.comments-card h3, h5{
+  margin: 0px;
+  color: black;
+}
+
+.comment{
+  border: solid rgb(197, 197, 197) 1.5px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.comment p{
+  margin:0px;
+  color: rgb(79, 79, 79);
+  max-width: inherit;
+}
+.write-review-div{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#comments button{
+  font-size: medium;
+  padding: 5px 10px;
+  background-color: white;
+  border: #8fcdff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 200ms;
+}
+#comments button:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);;
+}
+
+
+/*Commenting*/
+.comment-writing{
+  display: flex;
+  flex-direction: column;
+}
+
+.gossip-container{
+  display: flex;
+  justify-content: center;
+}
+
+.gossip-container form{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0;
+}
+.gossip-container form input{
+  height: 30px;
+}
+
+.gossip-container form input, textarea{
+  margin: 5px 0px 15px 0px;
+  border: solid rgb(179, 230, 255) ;
+  border-radius: 10px;
+}
+
+.gossip-container form input:focus, textarea:focus{
+  border: solid rgb(81, 197, 255);
+  outline: none;
+}
+
+.gossip-container form button,.thanks-inner button{
+  height: 40px;
+  width: fit-content;
+  background-color: white;
+  outline: none;
+  border: solid rgb(81, 197, 255) 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: rgb(0, 170, 255);
+  transition: 200ms;
+}
+
+.gossip-container form button:hover, .thanks-inner button:hover{
+  background-color: rgb(81, 197, 255);
+  border: solid white 2px;
+  color: white;
+}
+
+.thanks-section{
+  height: 100vh;
+}
+.thanks-page{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.thanks-inner{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thanks-page h3{
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+.thanks-inner button{
+  font-size: 30px;
+  height: max-content;
+  padding: 5px 10px;
+}
+
+
+
+
+
+@keyframes iconanimation {
+  0% {margin-left: -50;}
+  100% {margin-left: 0;}
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+  .profileImage {
+    height: 250px;
+    margin: 0 auto 20px auto;
+    float: none;
+    margin-right: 0;
+  }
+  .profile-icons{
+    width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    animation: iconanimation 2s;
+  }
+
+  @keyframes iconanimation {
+    0% {gap: 0px}
+    100% {gap: 30px;}
+  }
+
+  .insta-icon{
+    margin-right: 0px;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h3 {
+    font-size: 1rem;
+  }
+  .nav-bar{
+    font-size: 13px;
+    gap: 15px;
+  }
+  .nav-bar h3{
+    color: black;
+    z-index: 1;
+  }
+  .comments-container{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .comments-card{
+    max-width: 90%;
+  }
+  .carousel-item__details{
+    width: 250px;
+    
+  }
+}
