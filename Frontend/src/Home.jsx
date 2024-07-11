@@ -1,8 +1,8 @@
 import profileImage from "./assets/profile.jpg";
-import instaLogo from "./assets/insta.png"
-import git from "./assets/git.png"
-import linkedin from "./assets/linkedin.png"
-import leetcode from "./assets/leetcode.png"
+import instaLogo from "./assets/social-media/insta.png"
+import git from "./assets/social-media/git.png"
+import linkedin from "./assets/social-media/linkedin.png"
+import leetcode from "./assets/social-media/leetcode.png"
 function Home() {
     return (
         <section id="about" className="home">

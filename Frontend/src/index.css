@@ -86,24 +86,23 @@ section{
 /*Card CSS*/
 
 .carousel-item {
-  width: 200px;
-  height: 250px;
+  width: 400px; /* Fixed width for desktop view */
+  height: 269px; /* Adjusted height to maintain 16:9 aspect ratio */
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-right: 10px;
-  margin-top: 70px;
+  margin-right: 20px;
+  margin-top: 20px;
   display: inline-block;
   cursor: pointer;
-  -webkit-transition: 1000ms all;
   transition: 1000ms all;
   transform-origin: center left;
   position: relative;
 }
 
 .carousel-item__img {
-  width: 200px;
-  height: 250px;
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Ensure the image fills the container */
   object-fit: cover;
 }
 
@@ -113,7 +112,7 @@ section{
     rgba(0, 0, 0, 0.7) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-  font-size: 10px;
+  font-size: 10px; /* Adjusted font size for better readability */
   opacity: 0;
   transition: 600ms;
   padding: 10px;
@@ -122,15 +121,52 @@ section{
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 20px; /* Match the card's border radius */
 }
-.card-text{
-  margin-top: 70%;
+
+.carousel-item__details:hover {
+  opacity: 1;
 }
+
+.card-text {
+  height: 100%; /* Ensure it takes full height */
+  overflow: hidden; /* Hide overflow if text is too long */
+  word-wrap: break-word; /* Wrap long words */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+  .carousel-item {
+    width: 75%; /* 80% of display width for mobile view */
+    max-width: 300px; /* Maximum width for mobile view */
+    height: 180px; /* Adjusted height for mobile view */
+    margin: 20px auto; /* Center align and adjust margin */
+    border-radius: 10px; /* Reduced border radius for mobile */
+  }
+
+  .carousel-item__details {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ); /* Adjusted gradient for mobile view */
+    font-size: 12px; /* Decreased font size for better fit on smaller screens */
+    border-radius: 5px;
+  }
+  .carousel-item__details h2,h3{
+    margin: 0;
+  }
+}
+
 .carousel-item__details:hover {
   opacity: 1;
 }
 .carousel-item__details h2{
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .carousel-item__details h2,h3{
@@ -160,6 +196,9 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.skill-cards-container{
+  gap: 30px;
 }
 .section-header{
   margin: 0px 0px 20px 20px;
@@ -306,6 +345,29 @@ section{
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+
+
 
 
 
@@ -335,7 +397,7 @@ section{
     gap: 30px;
     justify-content: center;
     animation: iconanimation 2s;
-  }
+  }  
 
   @keyframes iconanimation {
     0% {gap: 0px}
@@ -370,6 +432,13 @@ section{
   }
   .carousel-item__details{
     width: 250px;
-    
+  }
+  .carousel-item__details{
+    opacity: 1;
+    background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.527) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   }
 }
