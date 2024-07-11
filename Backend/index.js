@@ -89,3 +89,7 @@ app.post("/gossip", async (req, res) => {
   }
 });
 
+module.exports = app;
+module.exports.handler = (req, res) => {
+  app(req, res);
+};
