@@ -6,7 +6,12 @@ require("dotenv").config();
 //Middlewares
 app.use(express.json());
 app.use(
-    cors()
+    cors({
+        origin: ["https://itzinr.vercel.app/"],
+        methods: ["POST", "GET"],
+        allowedHeaders: ["Content-Type"],
+        credentials: true,
+    })
 );
 
 const MONGODB_URI = process.env.MONGODB_URI;
