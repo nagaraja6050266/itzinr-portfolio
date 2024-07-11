@@ -12,7 +12,7 @@ function PostGossip() {
         const gossip = document.getElementById("gossip").value;
 
         try {
-            result = await fetch("https://itzinr-portfolio-api.vercel.app/gossip", {
+            result = await fetch("https://itzinr-api.vercel.app/gossip", {
                 method: "post",
                 body: JSON.stringify({ nickname, designation, gossip }),
                 headers: {
