@@ -72,7 +72,4 @@ app.post("/gossip", async (req, res) => {
     }
 });
 
-app.listen(5002, () => {
-    console.log("Server is running in 5002");
-});
 console.log("After listening");
