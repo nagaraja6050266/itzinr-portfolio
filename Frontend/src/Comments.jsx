@@ -7,7 +7,7 @@ function Comments() {
     const [comments, setComments] = useState([{ name: "Name" }]);
     const getComments = async () => {
         try {
-            const result = await fetch("http://localhost:5002/comments", {
+            const result = await fetch("https://itzinr-portfolio-api.vercel.app/comments", {
                 method: "get",
                 headers: {
                     "Content-Type": "application/json",
