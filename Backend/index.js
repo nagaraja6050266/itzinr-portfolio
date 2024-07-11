@@ -45,9 +45,17 @@ const GossipSchema = new mongoose.Schema({
 const Gossip = mongoose.model("Comments", GossipSchema);
 Gossip.createIndexes();
 
+const handleError = (err, res) => {
+    res.status(500).json({ error: "Internal Server Error" });
+};
+
 app.get("/", async (req, res) => {
-    res.send("App is working");
-    console.log("App working");
+    try {
+        res.send("App is working");
+        console.log("App working");
+    } catch (err) {
+        handleError(err, res);
+    }
 });
 
 app.get("/comments", async (req, res) => {
