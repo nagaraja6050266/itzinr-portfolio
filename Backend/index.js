@@ -81,3 +81,6 @@ app.post("/gossip", async (req, res) => {
 });
 
 console.log("After listening");
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
