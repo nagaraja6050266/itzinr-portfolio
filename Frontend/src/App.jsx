@@ -13,11 +13,13 @@ import PostGossip from "./PostGossip.jsx";
 import ScrollToTopButton from "./ScrollToTop.jsx";
 import Internship from "./Internship.jsx";
 import Leadership from "./Leadership.jsx";
+import OtherAchievements from "./OtherAchivements.jsx";
+import CreativeWorks from "./CreativeWorks.jsx";
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<><Navbar/><Home/><Skills/><Projects/><Internship/><Leadership/><TechnicalAchievements/><Comments/><ScrollToTopButton/></>} />
+                <Route path="/" element={<><Navbar/><Home/><Skills/><Projects/><Internship/><Leadership/><TechnicalAchievements/><OtherAchievements/><CreativeWorks/><Comments/><ScrollToTopButton/></>} />
                 <Route path="/comment" element={<PostGossip />} />
                 <Route path="/thank-you" element={<GossipStation/>} />
             </Routes>
