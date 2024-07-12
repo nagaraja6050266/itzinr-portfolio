@@ -1,8 +1,8 @@
 import profileImage from "./assets/profile.jpg";
-import instaLogo from "./assets/social-media/insta.png"
-import git from "./assets/social-media/git.png"
-import linkedin from "./assets/social-media/linkedin.png"
-import leetcode from "./assets/social-media/leetcode.png"
+import instaLogo from "./assets/social-media/insta.png";
+import git from "./assets/social-media/git.png";
+import linkedin from "./assets/social-media/linkedin.png";
+import leetcode from "./assets/social-media/leetcode.png";
 function Home() {
     return (
         <section id="about" className="home">
@@ -14,10 +14,22 @@ function Home() {
                         alt="image"
                     />
                     <div className="icons">
-                    <a href=""><img className="icon insta-icon" src={instaLogo} alt="Instalogo" /></a>
-                    <a href=""><img className="icon" src={linkedin} alt="" /></a>
-                    <a href=""><img className="icon" src={git} alt="" /></a>
-                    <a href=""><img className="icon" src={leetcode} alt="" /></a>
+                        <a href="https://www.instagram.com/itz__inr">
+                            <img
+                                className="icon insta-icon"
+                                src={instaLogo}
+                                alt="Instalogo"
+                            />
+                        </a>
+                        <a href="https://www.linkedin.com/in/itzinr">
+                            <img className="icon" src={linkedin} alt="" />
+                        </a>
+                        <a href="https://github.com/nagaraja6050266">
+                            <img className="icon" src={git} alt="" />
+                        </a>
+                        <a href="https://leetcode.com/itzinr">
+                            <img className="icon" src={leetcode} alt="" />
+                        </a>
                     </div>
                 </div>
 

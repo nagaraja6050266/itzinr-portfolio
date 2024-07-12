@@ -1,4 +1,4 @@
-import SkillCard from "./SkillCard";
+import SkillsSection from "./SkillsSection";
 
 import cicon from "./assets/skillicons/c.png";
 import pythonicon from "./assets/skillicons/python.png";
@@ -9,7 +9,7 @@ import figmaicon from "./assets/skillicons/figma.png";
 import blendericon from "./assets/skillicons/blender.png";
 import davinciicon from "./assets/skillicons/davinci.png";
 
-const set = [
+const technicalSkills = [
     { icon: pythonicon, name: "Python" },
     { icon: jsicon, name: "Javascript" },
     { icon: javaicon, name: "Java" },
@@ -20,22 +20,17 @@ const set = [
     { icon: figmaicon, name: "figma" },
 ];
 
-function Skills() {
-    return (
-        <section id="skills">
-            <div>
-                <h1 className="section-header">Skills</h1>
-                <div className="skill-cards-container">
-                    {set.map((s, i) => (
-                        <SkillCard
-                            key={i}
-                            iconSource={s.icon}
-                            skillName={s.name}
-                        />
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
+const set=[{
+    sectionName: 'Technical Skills',
+    sectionContent: technicalSkills
+}]
+
+function Skills(){
+    return <>
+    {
+        set.map((s,i) => <SkillsSection key={i} set={s.sectionContent} header={s.sectionName} />)   
+    }
+    </>
 }
-export default Skills;
+
+export default Skills
