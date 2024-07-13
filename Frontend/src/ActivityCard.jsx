@@ -1,7 +1,6 @@
-import cardimage from "./assets/profile.jpg";
 function ActivityCard(props) {
     return (
-        <div className="carousel-item">
+        <div className="carousel-item" id={props.id}>
             <a href={props.link} >
                 <img
                     className="carousel-item__img"

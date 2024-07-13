@@ -69,6 +69,7 @@ const technicalAchivementsSection = [
         name: "LeetCode Track Record",
         description:
             "Found Optimal Solutions for 60+ problems with various Data Structures",
+            id: 'achievements'
     },
     {
         image: problemsolving,

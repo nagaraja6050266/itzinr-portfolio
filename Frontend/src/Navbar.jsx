@@ -16,9 +16,9 @@ function Navbar() {
                     <h3>Projects</h3>
                 </div>
             </a>
-            <a href="#comments">
+            <a href="#achievements">
                 <div className="nav-bar-item">
-                    <h3>Comments</h3>
+                    <h3>Achievements</h3>
                 </div>
             </a>
         </div>

@@ -13,6 +13,7 @@ function CardsAndHeader({ set, headerName }) {
                                 name={s.name}
                                 description={s.description}
                                 link={s.link}
+                                id={s.id}
                             />
                         ))}
                     </div>
