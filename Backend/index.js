@@ -8,7 +8,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://itzinr.vercel.app"],
+    origin: ["https://itz.inr.vercel.app"],
     methods: ["POST", "GET"],
     allowedHeaders: ["Content-Type"],
     credentials: true,

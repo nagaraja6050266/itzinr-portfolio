@@ -10,12 +10,14 @@ const projectsSection = [
         name: "Discover-Me Quiz App",
         description:
             "A Personalized Quiz app to conduct quiz, and can see their rankings.",
+            link: 'https://discover-inr.vercel.app/'
     },
     {
         image: crud,
         name: "Product Management API",
         description:
             "API to manage product data from database and can handle all kind of HTTP requests",
+        link: ''
     },
     {
         image: searchautomation,
