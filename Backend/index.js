@@ -18,7 +18,7 @@ app.use(
 // MongoDB Connection
 mongoose
     .connect(
-        "mongodb+srv://nagaraja6050266:Inr6050266@cluster0.xtxo0yy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "mongodb+srv://nagaraja6050266:Inr6050266@cluster0.qwxcxia.mongodb.net/",
         {
             dbName: "Portfolio-Comments",
             useNewUrlParser: true,
