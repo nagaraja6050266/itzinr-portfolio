@@ -17,19 +17,21 @@ const projectsSection = [
         name: "Product Management API",
         description:
             "API to manage product data from database and can handle all kind of HTTP requests",
-        link: ''
+        link: 'https://github.com/nagaraja6050266/CRUDapi'
     },
     {
         image: searchautomation,
         name: "Search Automation",
         description:
             "Automated the process of searching in google with keywords and storing search history with single click",
+        link: 'https://github.com/nagaraja6050266/SearchAutomation'
     },
     {
         image: ui,
         name: "UI Designs",
         description:
             "Designed appealing UI designs for both mobiles and desktop using Figma",
+        link: 'https://drive.google.com/drive/folders/1CqfdepNV0xovY15oV42QzqyXvhj3FV7e?usp=sharing'
     },
 ];
 
@@ -69,6 +71,7 @@ const technicalAchivementsSection = [
         name: "LeetCode Track Record",
         description:
             "Found Optimal Solutions for 60+ problems with various Data Structures",
+            link: 'https://leetcode.com/itzinr/',
             id: 'achievements'
     },
     {
@@ -157,6 +160,7 @@ const creativeWorksSection = [
         name: "HUKUM - Cinematic Fusion - Video Edit",
         description:
             "Crafted a short story made from reference of multiple stars, exploring a new Cinematic Universe",
+            link: 'https://youtu.be/CE3Peyw1Qc8?si=vZ8JrquIcBoVeKBX'
     },
     {
         image: inaguration,
@@ -168,6 +172,7 @@ const creativeWorksSection = [
         image: beastthunivu,
         name: "Beast x Thunivu - Imaginary Crossover",
         description: "Presented a Imaginary story based on different movies",
+        link: 'https://youtu.be/I5bwZrfkNEU?si=SoW1viko-K-3KvQ0'
     },
 ];
 

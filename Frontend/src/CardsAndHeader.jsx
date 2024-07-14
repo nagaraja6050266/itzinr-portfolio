@@ -4,7 +4,7 @@ function CardsAndHeader({ set, headerName }) {
     return (
         <section id="projects">
             <div>
-                <h1 className="section-header">{headerName}</h1>
+                <h1 className="section-header blue">{headerName}</h1>
                     <div className="projects-container">
                         {set.map((s, i) => (
                             <ActivityCard
