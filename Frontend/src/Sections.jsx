@@ -10,28 +10,28 @@ const projectsSection = [
         name: "Discover-Me Quiz App",
         description:
             "A Personalized Quiz app to conduct quiz, and can see their rankings.",
-            link: 'https://discover-inr.vercel.app/'
+        link: "https://discover-inr.vercel.app/",
     },
     {
         image: crud,
         name: "Product Management API",
         description:
             "API to manage product data from database and can handle all kind of HTTP requests",
-        link: 'https://github.com/nagaraja6050266/CRUDapi'
+        link: "https://github.com/nagaraja6050266/CRUDapi",
     },
     {
         image: searchautomation,
         name: "Search Automation",
         description:
             "Automated the process of searching in google with keywords and storing search history with single click",
-        link: 'https://github.com/nagaraja6050266/SearchAutomation'
+        link: "https://github.com/nagaraja6050266/SearchAutomation",
     },
     {
         image: ui,
         name: "UI Designs",
         description:
             "Designed appealing UI designs for both mobiles and desktop using Figma",
-        link: 'https://drive.google.com/drive/folders/1CqfdepNV0xovY15oV42QzqyXvhj3FV7e?usp=sharing'
+        link: "https://drive.google.com/drive/folders/1CqfdepNV0xovY15oV42QzqyXvhj3FV7e?usp=sharing",
     },
 ];
 
@@ -71,8 +71,8 @@ const technicalAchivementsSection = [
         name: "LeetCode Track Record",
         description:
             "Found Optimal Solutions for 60+ problems with various Data Structures",
-            link: 'https://leetcode.com/itzinr/',
-            id: 'achievements'
+        link: "https://leetcode.com/itzinr/",
+        id: "achievements",
     },
     {
         image: problemsolving,
@@ -153,26 +153,25 @@ import hukum from "./assets/creative-works/hukum.png";
 import inaguration from "./assets/creative-works/inaguration.jpg";
 import beastthunivu from "./assets/creative-works/beast-thunivu.jpg";
 
-
 const creativeWorksSection = [
     {
         image: hukum,
         name: "HUKUM - Cinematic Fusion - Video Edit",
         description:
             "Crafted a short story made from reference of multiple stars, exploring a new Cinematic Universe",
-            link: 'https://youtu.be/CE3Peyw1Qc8?si=vZ8JrquIcBoVeKBX'
+        link: "https://youtu.be/CE3Peyw1Qc8?si=vZ8JrquIcBoVeKBX",
     },
     {
         image: inaguration,
         name: "Association Inaguration - Video Edit",
         description:
             "Crafted a attractive presentation video in Association inaguration 2023",
+        link: "https://youtu.be/I5bwZrfkNEU?si=SoW1viko-K-3KvQ0",
     },
     {
         image: beastthunivu,
         name: "Beast x Thunivu - Imaginary Crossover",
         description: "Presented a Imaginary story based on different movies",
-        link: 'https://youtu.be/I5bwZrfkNEU?si=SoW1viko-K-3KvQ0'
     },
 ];
 
