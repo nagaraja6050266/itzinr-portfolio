@@ -3,7 +3,18 @@ import instaLogo from "./assets/social-media/insta.png";
 import git from "./assets/social-media/git.png";
 import linkedin from "./assets/social-media/linkedin.png";
 import leetcode from "./assets/social-media/leetcode.png";
+import { Box, Button } from "@mui/material";
 function Home() {
+    const handleContact = () => {
+        window.location.href =
+            "https://mail.google.com/mail/?to=nagaraja6050266@gmail.com&su=Contacting+through+Portfolio&body=Hey+I+want+to+connect+with+you...&fs=1&tf=cm";
+    };
+
+    const handleDownloadCV = () => {
+        window.location.href =
+            "https://drive.google.com/drive/folders/1_q8lIaRZozpa33n-OFbqvAWojxrxHVRZ?usp=sharing";
+    };
+
     return (
         <section id="about" className="home">
             <div className="intro">
@@ -50,6 +61,14 @@ function Home() {
                         Explore my projects and see how I can contribute to your
                         business's success.
                     </p>
+                    <Box sx={{ display: "flex" }} gap={2}>
+                        <Button variant="outlined" onClick={handleDownloadCV}>
+                            Download CV
+                        </Button>
+                        <Button variant="contained" onClick={handleContact}>
+                            Contact
+                        </Button>
+                    </Box>
                 </div>
             </div>
         </section>

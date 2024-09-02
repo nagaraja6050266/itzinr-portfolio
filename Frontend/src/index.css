@@ -1,6 +1,5 @@
 *{
-  font-family: Poppins;
-  color: black;
+  font-family: Poppins !important;
   font-weight: normal;
   scroll-behavior: smooth;
 }
